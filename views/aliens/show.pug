@@ -1,0 +1,12 @@
+extends  ../shared/template
+
+block content
+  h1 #{alien.name}
+  form(action='remove/' + alien.id method='get')
+    button.btn.btn-danger(type='submit') Delete
+  div
+    h3 Picture:
+    img.img-responsive(src=alien.picture)
+  div
+    h3 Planet:
+    img.img-responsive(src=alien.planet)

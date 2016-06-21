@@ -1,0 +1,35 @@
+nav.navbar.navbar-default.navbar-static-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') "Aliens"
+      ul.nav.navbar-nav.navbar
+        li
+          a(href='/')
+            i.fa.fa-phone.fa-fw
+            span Home
+            span.sr-only (current)
+        li.navbar-nav
+          a(href='/about')
+            i.fa.fa-reddit-alien.fa-fw
+            span About
+        li.navbar-nav
+          a(href='/faq')
+            i.fa.fa-video-camera.fa-fw
+            span FAQ
+    ul.nav.navbar-nav.navbar-right
+      li.navbar-nav
+        a(href='/aliens')
+          i.fa.fa-space-shuttle.fa-fw
+          span Aliens
+      li.navbar-nav
+        a(href='/aliens/new')
+          i.fa.fa-plus.fa-fw
+          span New Alien
+      //- ul.nav.navbar-nav.navbar-right
+      //-   img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Alien01.svg/2000px-Alien01.svg.png'
+      //-   style='width:25px; height:25px;')

@@ -1,0 +1,22 @@
+extends  ../shared/template
+
+block title
+  h1 Add New Alien
+block content
+  .row
+    .col-xs-6
+      form(action='/aliens' method='post')
+        div.form-group
+          label(for='newName') Name
+          input.form-control(type='text' name='newName')
+        div.form-group
+          label(for='newAge') Age
+          input.form-control(type='number' name='newAge')
+        div.form-group
+          label(for='newPicture') Picture
+          input.form-control(type='text' name='newPicture' placeholder='insert link')
+        div.form-group
+          label(for='newPlanet') Planet
+          input.form-control(type='text' name='newPlanet' placeholder='insert link')
+        button.btn.btn-success(type='submit') Submit
+    .col-xs-6

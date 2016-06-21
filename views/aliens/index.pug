@@ -1,0 +1,13 @@
+extends  ../shared/template
+
+block title
+  h1 Aliens
+block content
+    each alien in aliens
+      .row
+        .col-xs-4(style='text-align: center; font-size:4vw;')
+          a(href='/aliens/' + alien.id) #{alien.name}
+        .col-xs-4
+          img.img-responsive.thumbnail(src=alien.picture style=' height:200px;')
+        .col-xs-4
+          img.img-responsive.thumbnail(src=alien.planet style=' height:200px;')
